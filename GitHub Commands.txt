@@ -1,0 +1,43 @@
+$ ls
+$ git config --config global user.name "Deepjyoti554"
+$ git config --global user.email "deepjyotidebnath369@gmail.com"
+$ touch .gitignore
+$ git init
+$ git add .
+$ git commit -m "initial commit"
+$ git status
+$ git remote add origin (git@github.com:Deepjyoti554/Task-Manager-NodeJs.git) => SSH KEY of that project we get from Github
+$ git push origin master
+
+{//Creating new SSH KEY from Security perpous => (https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
+$ ssh-keygen -t rsa -b 4096 -C "deepjyotidebnath369@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/KIIT/.ssh/id_rsa):
+/c/Users/KIIT/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/KIIT/.ssh/id_rsa
+Your public key has been saved in (/c/Users/KIIT/.ssh/id_rsa.pub) => This is the path where the project is located
+The key fingerprint is:
+SHA256:q/YqR39WeQr4G59WEl7190qKrx7PdPUqLp3QSt7i5Qg deepjyotidebnath369@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|                 |
+|                .|
+|               ..|
+|            . . o|
+|        S. o +  +|
+|      . ..+ * +.o|
+|     . .E+oOoO...|
+|    . o...X@Oo.. |
+|     +oo.=*OO..  |
++----[SHA256]-----+
+
+$ cat /c/Users/KIIT/.ssh/id_rsa.pub
+(ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDbiF/5VQnCxUgbwxk68IUHAP+q258BMBJWB9mh76NxCW33clElS4s9tM0pQ/83tYExVtr/PEXF3wimGDF1Eaqdzc97+6fgqjy7BcJnMJiyqi8qYdaRy6JnVmX8DGPXicA1SflSqzYaXaatke5wW/W9oqew45sh1ejKlN9yMe187HXhoDUrahOeQmiXwjkZ4IQ2Nc/bfZpkZ5qkYCOhUMskePrvQlFKLb53r+21u3btTs1/6TBGltwLuLIMO6U4fhVlJOfX/2J+x3fJT/tnHm1yhu7ucZVX8d+DZFCGUMYVdrAUpBj0cB9C1Xl3ljU/vHL1B7Mla8/nsPc367tNINiPTjfZ8/HY/Y4pFi5hbSRw5A0GBRb4/vHYmCaYIASSQNdwGF93CaJxXQWBjRTOR5/IMjXaiAAIh8C+0v7wvoLASlALP0hywMMoVJfc+nKHDG21fxLIncOiVBq9N4KKzD0V+2MdjYcZ0SfCw1k1o7ibwdq4dIsuVV7A1skCvyK63Xb51+VyxRZdYKulTDnXYrTmppPADWReTZb/2BVt8F1nw/RMrCvV59cDn9gxYFRtXhFMnw3CIwhZgUsYbPDnsbRcB66rsPZDw0nUwYv0xrQWTrt5ibKKn5Jq3DcyNdLbaG/HA1X+dLShnYuVErjikgJsxeaMlKhYKoEgX/VMct7CQQ== deepjyotidebnath369@gmail.com) => New SSH KEY
+
+}
+$ git push origin master
+
